@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>アンケートフォーム</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>アンケート</h1>
+      <form id="survey-form">
+        <label for="book-input">好きな本はなんですか？</label><br />
+        <input type="text" id="book-input" required />
+        <br />
+        <button type="submit">送信</button>
+      </form>
+    </div>
+
+    <!-- 確認モーダル -->
+    <div class="modal-overlay" id="confirm-modal">
+      <div class="modal">
+        <p>送信すると取り消せませんがよろしいですか？</p>
+        <div class="modal-buttons">
+          <button class="back-button">戻る</button>
+          <button class="submit-confirm">送信</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 完了モーダル -->
+    <div class="modal-overlay" id="thankyou-modal">
+      <div class="modal">
+        <p>ありがとうございました。</p>
+        <div class="modal-buttons">
+          <button class="reset-button">アンケートに戻る</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

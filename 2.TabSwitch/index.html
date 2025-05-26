@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>タブ切り替え</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tab-container">
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab" data-tab="html-tab">HTML</button>
+        <button type="button" class="tab" data-tab="css-tab">CSS</button>
+        <button type="button" class="tab" data-tab="js-tab">JavaScript</button>
+      </div>
+
+      <div class="tab-content" id="html-tab">
+        <h2>HTMLとは？</h2>
+        <p>HTMLは、ウェブページの構造を作るためのマークアップ言語です。
+          <br>見出しや段落、画像などを配置します。</p>
+      </div>
+      <div class="tab-content" id="css-tab">
+        <h2>CSSとは？</h2>
+        <p>CSSは、HTMLで作ったページにデザインやレイアウトを
+          <br>加えるためのスタイルシート言語です。</p>
+      </div>
+      <div class="tab-content" id="js-tab">
+        <h2>JavaScriptとは？</h2>
+        <p>JavaScriptは、ウェブページに動きやインタラクションを
+          <br>追加するためのプログラミング言語です。</p>
+        <p>ライブラリにはjQueryがあります</p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

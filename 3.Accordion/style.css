@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #ddd;
+  margin-top: 10px;
+}
+
+.accordion-content {
+  display: none;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.accordion-content li {
+  margin: 5px 0;
+}
+
+/* サブヘッダー */
+.sub-header {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+/* サブコンテンツ */
+.sub-content {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.sub-content li {
+  padding: 3px 0;
+}
