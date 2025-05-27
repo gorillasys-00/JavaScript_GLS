@@ -1,0 +1,59 @@
+/* 全要素のボックスサイズを border-box に　*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* デフォルトのmarginを削除 */
+body, h1, h2, h3, h4, p, ul, ol,
+li, figure, figcaption, blockquote, dl,dd {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* スムーズなスクロールとテキストの可読性向上 */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+/* リストマーカーを削除 */
+ul,
+ol {
+  list-style: none;
+}
+
+
+/* aタグの初期化 */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+/* 画像の表示調整 */
+img {
+  max-width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+
+
+/* フォーム要素に共通フォントの適用 */
+input, button, textarea, select {
+  font: inherit;
+}
+
+
+/* モーション無効化（希望者向け） */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

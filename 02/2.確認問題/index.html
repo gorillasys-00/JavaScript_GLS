@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>2.確認問題 | JavaScript</title>
+
+    <!-- 共通スタイルの読み込み（reset, base） -->
+    <link rel="stylesheet" href="../../00/reset.css">
+    <link rel="stylesheet" href="../../00/base.css">
+
+    <!-- ページ固有のスタイル -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery（CDN） -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- ページ固有のスクリプト -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <main class="main">
+        <section class="section">
+          <div>
+            <img src="./images/fv-image1.jpg" alt="">
+          </div>
+        </section>
+        <section class="section">
+          <div>
+            <h2 class="section-title">モーダル</h2>
+            <div class="panel-list mtx">
+              <div class="panel">
+                <div class="panel-img"><img src="./images/modal-img1.jpg" alt=""></div>
+                <h3 class="panel-caption">透き通った海の上を渡る橋</h3>
+              </div>
+              <div class="panel">
+                <div class="panel-img"><img src="./images/modal-img2.jpg" alt=""></div>
+                <h3 class="panel-caption">命息づく緑の山々</h3>
+              </div>
+              <div class="panel">
+                <div class="panel-img"><img src="./images/modal-img3.jpg" alt=""></div>
+                <h3 class="panel-caption">見草原に広がる、果てなき青</h3>
+              </div>
+            </div>
+            <div class="modal-overlay">
+              <div class="modal">
+                <div><img src="" alt=""></div>
+                <h3 class="modal-caption"></h3>
+                <p class="modal-back">戻る</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div>
+            <h2 class="section-title">タブ切り替え</h2>
+            <div class="mtx">
+              <ul class="tab">
+                <li>HOME</li>
+                <li>NEWS</li>
+                <li>MYPAGE</li>
+              </ul>
+              <ul class="tab-contents">
+                <li>
+                  このページでは、私が各地を巡って感じた風景や出会い、そして心に残った出来事を記録しています。
+                  目的地も決めず、ただ惹かれる場所へ足を運び、見たもの・聞いたこと・感じたことを、言葉と写真で残していきます。
+                  忘れたくない風景や、ふとした瞬間の想いを、自分なりのペースで綴っていく旅の記録帳です。
+                  どうぞ気ままに読み進めていただければ嬉しいです。
+                </li>
+                <li class="is-hidden">
+                  新しい旅の記録を公開しました。今回は、山で過ごした静かな3日間の体験をまとめています。
+                  写真や気づき、ちょっとした失敗談まで、現地でしか味わえなかった出来事を綴っています。
+                  これからも、旅を通して感じたことを少しずつ書き残していきますので、よろしければご覧ください。
+                </li>
+                <li class="is-hidden">
+                  初めまして。都市の喧騒から少し離れ、自分のペースで旅を続けている者です。
+                  「なぜ旅に出るのか」と聞かれることがありますが、明確な答えはまだ見つかっていません。
+                  ただ、知らない土地に立ったときの胸の高鳴りや、現地で出会った人との何気ない会話が、
+                  少しずつ、自分という存在を形づくってくれている気がします。
+                  このページでは、そんな日々の記録をゆるやかに綴っています。
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div>
+            <h2 class="section-title">アコーディオン</h2>
+            <div class="mtx">
+              <div class="accordion">
+                <div class="accordion-title">風を渡る橋の上で</div>
+                <div class="accordion-contents">
+                  透明度の高い海の上に、まっすぐ伸びる一本の橋。
+                  足元を覗き込むと、海の底が見えるほど透き通っていて、空と水面の境界が曖昧になる感覚に包まれました。
+                  海風は強く、潮の香りが服にも髪にも染み込み、まるで自分が海の一部になったような心地よさでした。
+                  渡り終えたあとも、振り返って何度もその景色を確かめてしまう。そんな場所でした。
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-title">深緑の奥へ</div>
+                <div class="accordion-contents">
+                  見渡す限り、深い緑が折り重なるように連なる山々。
+                  道中には小さな沢がいくつも現れ、苔むした岩を水がなめらかに流れていく様子が印象的でした。
+                  山の静けさの中では、心の中のざわつきもすっと消えて、ただ風と木々の音に耳を傾けている自分がいました。
+                  頂上に立ったときの達成感よりも、そこに至るまでのすべての瞬間が、愛おしく思える山旅でした。
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-title">空を仰ぐ草原にて</div>
+                <div class="accordion-contents">
+                  一面の草原の上に、どこまでも広がる青い空。
+                  雲ひとつないその空は、地平線の先まで澄み渡っていて、思わず立ち止まって見上げてしまいました。
+                  静かな風が吹き抜けるたびに、草がさわさわと揺れ、小さな虫たちの声が遠くで響いていました。
+                  何もない、けれど、何もいらない。そんな不思議な充足感に包まれた時間でした。
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+
+</html>
