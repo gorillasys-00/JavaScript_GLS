@@ -1,0 +1,127 @@
+/* 画面中央配置 */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* 外枠 */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 500px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* タブ */
+.tab-group {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  width: 50%;
+  padding: 12px;
+  background-color: #eee;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+.tab.active {
+  background-color: #fff;
+  font-weight: bold;
+  border-bottom: 3px solid #007bff;
+}
+
+/* セクション */
+.form-section,
+.list-section {
+  padding: 20px;
+}
+
+/* 入力フォーム */
+.todo-form {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title-input,
+.content-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.submit-button {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+}
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* ToDo一覧 */
+.todo-items li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.todo-items li:hover {
+  background-color: #f9f9f9;
+}
+
+.todo-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.todo-content {
+  display: none;
+  color: #555;
+  white-space: pre-wrap;
+  margin-top: 4px;
+}
+
+/* タブコンテンツ切り替え */
+.tab-content {
+  margin-top: 5px;
+  color: #333;
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+

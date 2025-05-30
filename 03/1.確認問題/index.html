@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>3.確認問題 | ToDoアプリ実装 | JavaScript</title>
+
+    <!-- 共通スタイルの読み込み（reset, base） -->
+    <link rel="stylesheet" href="../../00/reset.css">
+    <link rel="stylesheet" href="../../00/base.css">
+
+    <!-- ページ固有のスタイル -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery（CDN） -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- ページ固有のスクリプト -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+
+        <div class="tab-group">
+          <button class="tab" data-tab="form">フォーム</button><!--active削除-->
+          <button class="tab" data-tab="list">ToDo一覧</button>
+        </div>
+
+        <div class="tab-content-container">
+          <div id="form" class="tab-content"><!--active削除-->
+            <section class="form-section">
+              <form class="todo-form">
+                <label>タイトル</label>
+                <input type="text" class="title-input" />
+
+                <label>内容</label>
+                <textarea rows="4" class="content-input"></textarea>
+
+                <button type="submit" class="submit-button">送信</button>
+              </form>
+            </section>
+          </div>
+
+          <div id="list" class="tab-content">
+            <section class="list-section">
+              <ul class="todo-items"><!-- ここにToDoが追加されます --></ul>
+            </section>
+          </div>
+        </div>
+
+  </body>
+</html>
+
